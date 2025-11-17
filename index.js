@@ -1,10 +1,8 @@
 function markAsDone(todos) {
-  return todos.map(todo => {
-    return {
-      ...todo,
-      description: 'done - ' + todo.description
-    };
-  });
+  for (let i = 0; i < todos.length; i++) {
+    todos[i].description = 'done - ' + todos[i].description;
+  }
+  
+  return todos;
 }
-
 
