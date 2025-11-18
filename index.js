@@ -1,8 +1,5 @@
-function markAsDone(todos) {
-  for (let i = 0; i < todos.length; i++) {
-    todos[i].description = 'done - ' + todos[i].description;
+function markAsDone('todo1', 'todo2', 'todo3') {
+  for(let i = 0; i < 3; i++) {
+    count+= i;
   }
-  
-  return todos;
 }
-
